@@ -2,18 +2,18 @@ import React, {
   Component
 } from "react";
 
-class Ivory extends Component {
+class HiddenEbony extends Component {
   constructor(props) {
     super(props);
   }
 
   render() {
     return (
-      <div className="ivory key"></div>
+      <div className="ebony hidden"></div>
     )
   }
 }
 
 
 
-export default Ivory;
+export default HiddenEbony;

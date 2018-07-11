@@ -4,15 +4,18 @@ import './App.css';
 import Start from './components/Start';
 import Score from './components/Score';
 import MessageBox from './components/MessageBox';
+import Piano from './components/piano/Piano';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Start />
-        <Score />
-        <MessageBox />
-        {/* <Piano /> */}
+        <div id="info">
+          <Start />
+          <Score />
+          <MessageBox />
+        </div>
+        <Piano />
 
       </div>
     );

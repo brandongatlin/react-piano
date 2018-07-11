@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: minmax(100px, auto);
+  grid-template-areas: ". info ." ". piano .";
+}
+
+#info {
+  grid-area: info;
+  height: 100px;
+  border: 1px solid blue;
+}
+
+#piano {
+  grid-area: piano;
+  width: 1fr;
+  height: 400px;
+}
+
+#ivories {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  width: 1fr;
+  z-index: 1;
+}
+
+#ebonies {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  width: 1fr;
+  position: relative;
+  top: -324px;
+  z-index: 2;
+}
+
+.key {
+  border: .2em solid black;
+}
+
+.key:hover {
+  background-color: pink;
+}
+
+.key:active {
+  border: .1em solid black;
+}
+
+.ivory {
+  height: 16em;
+  width: 1fr;
+}
+
+.ebony {
+  background-color: black;
+  height: 10em;
+  width: 2em;
+  position: relative;
+  left: -20px;
+}
+
+#ebonies div {
+  border: 1px solid blue;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: gold;
+}
+
+@media screen and (max-width: 900px) {
+  #grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(100px, auto);
+    grid-template-areas: "info" "piano";
+  }
+}
