@@ -9,7 +9,7 @@ class Ivory extends Component {
 
   render() {
     return (
-      <div className="ivory key"></div>
+      <div className="ivory key" onClick={this.props.getRandomNote}></div>
     )
   }
 }

@@ -9,7 +9,7 @@ class Ebony extends Component {
 
   render() {
     return (
-      <div className="ebony key"></div>
+      <div className="ebony key" onClick={this.props.getRandomNote}></div>
     )
   }
 }

@@ -7,15 +7,16 @@ import Ebony from './keys/Ebony';
 import HiddenEbony from './keys/HiddenEbony';
 
 
-
 class Piano extends Component {
   constructor(props) {
     super(props);
   }
 
+
+
   render() {
     return (
-      <div id="piano">
+      <div id="piano" >
         <div id="ivories">
           <Ivory value="c1" src="sounds/c1.wav"/>
           <Ivory value="d1" src="sounds/d1.wav"/>
@@ -41,7 +42,5 @@ class Piano extends Component {
       )
   }
 }
-
-
 
 export default Piano;

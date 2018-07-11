@@ -9,7 +9,7 @@ class Start extends Component {
 
   render() {
     return (
-      <button type="button" onClick={this.props.start}>Start</button>
+      <button type="button" onClick={this.props.getRandomNote}>Start</button>
     )
   }
 }
